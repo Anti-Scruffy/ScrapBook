@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0AC82C7-A389-434F-BAA8-BBD448A0D14C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ScrapBook.My.MyApplication</StartupObject>
+    <RootNamespace>ScrapBook</RootNamespace>
+    <AssemblyName>ScrapBook</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ScrapBook.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ScrapBook.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Penguin.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUpdateBooks.Designer.vb">
+      <DependentUpon>AddUpdateBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUpdateBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateSupport.Designer.vb">
+      <DependentUpon>AddUpdateSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUpdateSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateUser.Designer.vb">
+      <DependentUpon>AddUpdateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUpdateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.vb">
+      <DependentUpon>AdminHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BooksHandler.Designer.vb">
+      <DependentUpon>BooksHandler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BooksHandler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatPost.Designer.vb">
+      <DependentUpon>ChatPost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChatPost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage1.Designer.vb">
+      <DependentUpon>HomePage1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScrapDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapDBDataSet.vb">
+      <DependentUpon>ScrapDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapDBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScrapDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Support.Designer.vb">
+      <DependentUpon>Support.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Support.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupportHandler.Designer.vb">
+      <DependentUpon>SupportHandler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupportHandler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersHandler.Designer.vb">
+      <DependentUpon>UsersHandler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsersHandler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPage.Designer.vb">
+      <DependentUpon>AdminLoginPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatPage.Designer.vb">
+      <DependentUpon>ChatPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChatPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dBconn.vb" />
+    <Compile Include="DeactivateSubPage.Designer.vb">
+      <DependentUpon>DeactivateSubPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeactivateSubPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPage.Designer.vb">
+      <DependentUpon>ForgotPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostPage.Designer.vb">
+      <DependentUpon>PostPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.Designer.vb">
+      <DependentUpon>ProfilePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.vb">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.vb">
+      <DependentUpon>MainPage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SettingsPage.Designer.vb">
+      <DependentUpon>SettingsPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddUpdateBooks.resx">
+      <DependentUpon>AddUpdateBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUpdateSupport.resx">
+      <DependentUpon>AddUpdateSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUpdateUser.resx">
+      <DependentUpon>AddUpdateUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksHandler.resx">
+      <DependentUpon>BooksHandler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatPost.resx">
+      <DependentUpon>ChatPost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage1.resx">
+      <DependentUpon>HomePage1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support.resx">
+      <DependentUpon>Support.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupportHandler.resx">
+      <DependentUpon>SupportHandler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersHandler.resx">
+      <DependentUpon>UsersHandler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginPage.resx">
+      <DependentUpon>AdminLoginPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatPage.resx">
+      <DependentUpon>ChatPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeactivateSubPage.resx">
+      <DependentUpon>DeactivateSubPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPage.resx">
+      <DependentUpon>ForgotPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostPage.resx">
+      <DependentUpon>PostPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilePage.resx">
+      <DependentUpon>ProfilePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPage.resx">
+      <DependentUpon>SettingsPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScrapDBDataSet.xsc">
+      <DependentUpon>ScrapDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScrapDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScrapDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScrapDBDataSet.xss">
+      <DependentUpon>ScrapDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScrapDBDataSet1.xsc">
+      <DependentUpon>ScrapDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ScrapDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScrapDBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScrapDBDataSet1.xss">
+      <DependentUpon>ScrapDBDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Penguin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\settings.PNG" />
+    <None Include="My Project\set.png" />
+    <None Include="My Project\bow.png" />
+    <None Include="My Project\photos.png" />
+    <None Include="My Project\search.png" />
+    <None Include="My Project\puzzle.png" />
+    <None Include="My Project\BCA-Sarvesh Kumar Modi.jpg" />
+    <None Include="My Project\back1.png" />
+    <None Include="My Project\111193-ONYU7F-795.jpg" />
+    <None Include="My Project\conference.png" />
+    <None Include="My Project\back2.png" />
+    <None Include="My Project\1500705637648.jpg" />
+    <None Include="My Project\DSC_1099.jpg" />
+    <Content Include="Penguin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
